@@ -167,3 +167,25 @@ def gcd(a,b):
         return gcd(a,b%a)
     
 print(gcd(24,1568))
+
+#lambda表达式
+#lambda是一种匿名函数，没有函数名称，只有一行代码，格式如下：
+#lambda 参数:表达式
+divides("Lambda Expression")
+
+f = lambda x:x**2
+print(f(3))
+
+f = lambda x,y:x+y
+print(f(3,4))
+
+f = lambda x,y,z:x+y+z
+print(f(3,4,5))
+
+f = lambda x:x if x%2==0 else -x
+print(f(3))
+print(f(-4))
+
+f = lambda x:x if x%2==0 else "odd"
+print(f(3))
+print(f(4))
